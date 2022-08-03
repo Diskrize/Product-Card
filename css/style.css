@@ -285,7 +285,7 @@ h6 {
 .wrapper_card_image::after {
     content: "";
     position: absolute;
-    width: 1500px;
+    width: 1200px;
     left: 0;
     top: 125%;
     border: 0.5px solid #d1d5db;
@@ -323,7 +323,7 @@ footer {
     margin-top: 50px;
 }
 .wrapper__footer {
-    justify-content: space-between;
+    justify-content: center;
 }
 .block__footer li {
     font-family: "Euclid Circular A";
@@ -357,17 +357,14 @@ footer {
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: #1F2937;
-}
-.footer__menu {
-    margin-left: 150px;
-
+    margin-left: 10px;
 }
 .footer__menu .block__footer:not(:first-child) {
     margin-left: 88px;
 }
-.footer__social {
+/* .footer__social {
     margin-right: 35px;
-}
+} */
 
 .social__items {
     display: flex;
@@ -385,4 +382,14 @@ footer {
 }
 .social__item {
     margin-right: 400px;
+}
+
+
+@media (max-width: 1400px) {
+    .cart_circle::after {
+        width: 328px;
+    }
+    .wrapper_checkout::after {
+        width: 348px;
+    }
 }
