@@ -109,6 +109,7 @@ h6 {
     letter-spacing: 0.02em;
     color: #e5e7eb;
     cursor: pointer;
+    /* margin-left: 310px; */
 }
 .wrapper_circle {
     display: flex;
@@ -138,23 +139,21 @@ h6 {
 .active_circle {
     border: 3px solid #1f2937;
 }
-.cart_circle,
-.wrapper_checkout {
+.wrapper_payment,
+.wrapper_checkout,
+.wrapper_cart {
     position: relative;
+    width: 550px;
+    text-align: center;
 }
-.cart__line {
+.wrapper_cart::after,
+.wrapper_checkout::after {
+    content: "";
     position: absolute;
     border: 0.5px solid #e5e7eb;
-    right: 52%;
-    bottom: 36.4%;
-    width: 23.5%;
-}
-.checkout__line {
-    position: absolute;
-    border: 0.5px solid #e5e7eb;
-    left: 75%;
+    left: 54%;
     bottom: 39%;
-    width: 583%;
+    width: 92%;
 }
 /*CARD_ITEMS*/
 .card_product {
@@ -323,7 +322,7 @@ footer {
     align-items: flex-end;
     flex-wrap: wrap;
 }
-.block__footer li {
+.block__footer li a {
     font-family: "Euclid Circular A";
     font-style: normal;
     font-weight: 400;
@@ -454,6 +453,7 @@ footer {
     display: flex;
     justify-content: space-around;
     margin-left: 70px;
+    margin-top: 72px;
 }
 .copi__menu {
     margin-right: 35px;
@@ -482,14 +482,6 @@ footer {
     margin-top: 24px;
     margin-bottom: 19px;
 }
-.wrap__footer {
-    margin-top: 72px;
-}
-.wrap__footer {
-    display: flex;
-    justify-content: space-aroud;
-    align-items: center;
-}
 .cards__title {
     font-family: "Euclid Circular A";
     font-style: normal;
@@ -508,12 +500,28 @@ footer {
 .footer__cards {
     margin-left: 165px;
 }
-.menu__item li {
+.menu__item li a {
     margin-top: 16px;
     text-decoration: underline;
+    color: #000;
 }
 
 /*! MEDIA */
+/* @media (max-width: 1920px) {
+    .wrapper_cart::after,
+    .wrapper_checkout::after {
+        left: 53%;
+        bottom: 39%;
+        width: 100%;
+    }
+    .wrapper_payment,
+    .wrapper_checkout,
+    .wrapper_cart {
+        position: relative;
+        width: 580px;
+        text-align: center;
+    }
+} */
 @media (max-width: 992px) {
     .header {
         background-repeat: no-repeat;
@@ -533,6 +541,15 @@ footer {
     .wrapper_card_remove {
         margin-right: 17px;
     }
+    .wrapper_cart_payment {
+        margin-top: 75px;
+    }
+    .wrapper_cart::after,
+    .wrapper_checkout::after {
+        left: 56%;
+        bottom: 39%;
+        width: 88%;
+    }
 }
 @media (max-width: 821px) {
     .cards__item,
@@ -545,6 +562,7 @@ footer {
     }
     .wrap__footer {
         margin-left: 150px;
+        margin-top: 35px;
     }
 }
 @media (max-width: 768px) {
@@ -584,6 +602,18 @@ footer {
     .search__input input {
         width: 100%;
     }
+    .wrapper_card_product::after {
+        width: 100%;
+    }
+    .block__search {
+        margin-left: 0;
+    }
+    .card_product {
+        margin-top: 0;
+    }
+    .wrapper_cart_payment {
+        margin-top: 30px;
+    }
 }
 @media (max-width: 620px) {
     .card_remove {
@@ -593,5 +623,82 @@ footer {
 @media (max-width: 576px) {
     .footer__menu {
         display: none;
+    }
+    footer {
+        margin-top: 0;
+    }
+    .block__search {
+        margin: 0 10px;
+    }
+    .social__items {
+        margin-bottom: 15px;
+    }
+    .header {
+        height: 150px;
+    }
+    .wrapper_cart::after,
+    .wrapper_checkout::after {
+        left: 58%;
+        bottom: 39%;
+        width: 84%;
+    }
+    .wrapper_cart_payment {
+        margin-top: 30px;
+    }
+}
+@media (max-width: 536px) {
+    .wrapper__copi {
+        display: none;
+    }
+}
+@media (max-width: 490px) {
+    .card_item_wrap div {
+        flex-wrap: wrap;
+    }
+    .card_item_amount {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .wrapper_cart_payment {
+        margin-top: 15px;
+    }
+    .header {
+        height: 80px;
+    }
+}
+@media (max-width: 390px) {
+    .wrapper_card_image img {
+        width: 100%;
+    }
+    .wrapper_cart::after,
+    .wrapper_checkout::after {
+        left: 60%;
+        bottom: 39%;
+        width: 80%;
+    }
+}
+@media (max-width: 330px) {
+    .social__items {
+        justify-content: space-evenly;
+    }
+    .platform__item {
+        margin-top: 20px;
+    }
+}
+@media (max-width: 313px) {
+    .header {
+        height: 100px;
+    }
+    .wrapper_card_info {
+        margin-bottom: 50px;
+    }
+    .wrapper_card_product::after {
+        top: 93%;
+    }
+    .wrapper_cart::after,
+    .wrapper_checkout::after {
+        left: 63%;
+        bottom: 39%;
+        width: 74%;
     }
 }
