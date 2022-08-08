@@ -7,15 +7,145 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/card_style.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://bootstraptema.ru/plugins/2015/bootstrap3/bootstrap.min.css" />
+    <!-- Пакет JavaScript с Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
     <title>Document</title>
 
 </head>
 
 <body>
+    <header__card>
+        <div class="container">
+            <div class="row header__block">
+                <div class="col-12">
+                    <div class="block__logo">
+                        <div class="card__logo">
+                            <div class="logo">Laura’s Closet</div>
+                        </div>
+                        <div class="card__search">
+                            <input type="text" placeholder="Search for an Item...">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card__menu">
+                        <ul class="flex">
+                            <li><a href="">Store</a></li>
+                            <li><a href="">Account</a></li>
+                            <li><a href="">Wish List</a></li>
+                            <li><a class="menu__basket active" href="">Basket</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header__card>
+    <section class="product__card">
+        <div class="container">
+            <div class="row block__card">
+                <div class="col-xxl-7 wrapper__slider">
+                    <div class="image">
+                        <button class="button__up"></button>
+                        <div class="active"><img src="img/slider_image.png" alt=""></div>
+                        <div><img src="img/slider_image.png" alt=""></div>
+                        <div><img src="img/slider_image.png" alt=""></div>
+                        <div class="last__img"><img src="img/slider_image.png" alt=""></div>
+                        <button class="button__down"></button>
+                    </div>
+                    <div class="card__image">
+                        <img src="img/product__card__image.png" alt="Платье">
+                    </div>
+                </div>
+                <div class="col-xxl-5 card__info">
+                    <div class="card__name">Floral Print Notched Neckline Dress Without Belt Notched Neckline</div>
+                    <div class="card__price">17,00€</div>
+                    <div class="card__size">Size</div>
+                    <div class="item__size">
+                        <div class="size"><span>s</span></div>
+                        <div class="size"><span>m</span></div>
+                        <div class="size"><span>x</span></div>
+                        <div class="size"><span>xl</span></div>
+                    </div>
+                    <div class="color__name">color</div>
+                    <div class="card__color ">
+                        <input class="active_color" type="color" value="#D3A693" disabled>
+                        <input type="color" value="#2C384C" disabled>
+                        <input type="color" value="#5C493B" disabled>
+                        <input type="color" value="#4E6553" disabled>
+                    </div>
+                    <div class="quantity__title">Quantity</div>
+                    <div class="quantity__calc">
+                        <button class="calc__minus">-</button>
+                        <div class="calc__number">1</div>
+                        <button class="calc__plus">+</button>
+                    </div>
+                    <button class="btn__card">Add to Basket</button>
+                    <div class="block__shiping">
+                        <div class="shipping">
+                            <div class="shiping__title">Free Shipping</div>
+                            <div class="shiping__info">Free standard shipping on orders over 9,00€ Estimated to be
+                                delivered on 28/02/2022 - 03/03/2022.</div>
+                        </div>
+                        <div class="return__product">
+                            <div class="return__title">Return Policy</div>
+                            <div class="return__learn">Learn More</div>
+                        </div>
+                    </div>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                Desctiption
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    +
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>Это тело аккордеона первого элемента.</strong> Оно отображается по
+                                    умолчанию, пока плагин свертывания не добавит соответствующие классы, которые мы
+                                    используем для стилизации каждого элемента. Эти классы управляют общим внешним
+                                    видом, а также отображением и скрытием с помощью переходов CSS. Вы можете изменить
+                                    все это с помощью собственного CSS или переопределить наши переменные по умолчанию.
+                                    Также стоит отметить, что практически любой HTML может быть помещен в
+                                    <code>.accordion-body</code>, хотя переход ограничивает переполнение.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                Size & Fit
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    +
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>Это тело аккордеона второго элемента.</strong> По умолчанию он скрыт, пока
+                                    плагин свертывания не добавит соответствующие классы, которые мы используем для
+                                    стилизации каждого элемента. Эти классы управляют общим внешним видом, а также
+                                    отображением и скрытием с помощью переходов CSS. Вы можете изменить все это с
+                                    помощью собственного CSS или переопределить наши переменные по умолчанию. Также
+                                    стоит отметить, что практически любой HTML может быть помещен в
+                                    <code>.accordion-body</code>, хотя переход ограничивает переполнение.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 block__baner">
                     <div class="image__title">Customers also bought these</div>
                     <div class="wrapper__img flex">
                         <div><img src="img/Card_1.png" alt=""></div>

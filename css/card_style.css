@@ -80,10 +80,372 @@ h6 {
     display: flex;
 }
 /*! HEADER CARD */
-
-.wrapper__img {
+.header__block {
+    margin-top: 25px;
+}
+.logo {
+    font-family: "Euclid Circular A";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: #374151;
+}
+.header__block {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 95px;
+}
+.block__logo {
+    display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+}
+.card__search {
+    width: 280px;
+    height: 24px;
+    border-bottom: 1px solid #9ca3af;
+    position: relative;
+    margin-left: 175px;
+}
+.card__search input {
+    margin-left: 35px;
+    margin-top: 2px;
+}
+.card__search::after {
+    position: absolute;
+    content: url(../img/Search_card.png);
+    width: 16px;
+    height: 16px;
+    top: 15%;
+    left: 0%;
+}
+.card__menu ul li a {
+    font-family: "Euclid Circular A";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #6b7280;
+    margin-right: 20px;
+}
+.card__menu ul {
+    flex-wrap: wrap;
+}
+.card__menu {
+    margin-left: 286px;
+}
+.active {
+    font-family: "Euclid Circular A";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #1f2937;
+}
+.menu__basket {
+    position: relative;
+}
+.menu__basket::after {
+    position: absolute;
+    content: url(../img/Basket.png);
+    width: 24px;
+    height: 21px;
+    bottom: -9%;
+    right: -75%;
+}
+/*! CARD-PRODUCT */
+.button__up,
+.button__down {
+    width: 146px;
+    height: 32px;
+    left: 72px;
+    top: 776px;
+    border: 1px solid #d1d5db;
+    background-color: #fff;
+}
+.button__down {
+    margin-top: 16px;
+}
+.image {
+    position: relative;
+}
+.last__img {
+    overflow: hidden;
+    height: 59px;
+}
+.image::after {
+    position: absolute;
+    content: url(../img/up.png);
+    top: 0.5%;
+    left: 41%;
+}
+.image::before {
+    position: absolute;
+    content: url(../img/down.png);
+    bottom: 0.5%;
+    left: 41%;
+}
+.wrapper__slider {
+    display: flex;
+}
+.card__image {
+    margin-left: 20px;
+}
+.image img {
+    margin-top: 16px;
+}
+.block__card {
+    display: flex;
+    align-items: baseline;
+}
+.card__info {
+    margin-left: 46px;
+}
+.card__size {
+    font-family: "Euclid Circular A";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.02em;
+    color: #1f2937;
+    margin-top: 40px;
+}
+.card__name {
+    font-family: "Euclid Circular A";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+    color: #374151;
+}
+.card__price {
+    font-family: "Euclid Circular A";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 41px;
+    letter-spacing: 0.02em;
+    color: #1f2937;
+    margin-top: 16px;
+}
+.color__name {
+    font-family: "Euclid Circular A";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.02em;
+    color: #1f2937;
+    margin-top: 40px;
+}
+.quantity__title {
+    font-family: "Euclid Circular A";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.02em;
+    color: #1f2937;
+    margin-top: 40px;
+}
+.quantity__calc {
+    display: flex;
+    width: 146px;
+    height: 44px;
+    border: 1px solid #1f2937;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 24px;
+}
+.calc__minus,
+.calc__plus {
+    position: relative;
+    background-color: #fff;
+}
+.calc__minus::before {
+    position: absolute;
+    content: '';
+    height: 43px;
+    top: -58%;
+    left: 512%;
+    border-left: 1px solid #1F2937;
+}
+.calc__plus::before {
+    position: absolute;
+    content: '';
+    height: 43px;
+    top: -58%;
+    left: -204%;
+    border-left: 1px solid #1F2937;
+}
+.btn__card {
+    width: 382px;
+    height: 64px;
+    background: #1f2937;
+    border-radius: 3px;
+    font-family: "Euclid Circular A";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #ffffff;
+    position: relative;
+    margin-top: 40px;
+}
+.btn__card::after {
+    position: absolute;
+    content: url(../img/like_heart.png);
+    top: 0%;
+    right: -27%;
+}
+.block__shiping {
+    background: #f3f4f6;
+    border-radius: 7px;
+    margin-top: 40px;
+    width: 580px;
+    height: 203px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+.shipping,
+.return__product {
+    width: 530px;
+    height: 69px;
+    margin-top: 25px;
+}
+.shiping__title,
+.return__title {
+    font-family: "Euclid Circular A";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.02em;
+    color: #1f2937;
+    position: relative;
+}
+.shiping__title::before {
+    position: absolute;
+    content: url(../img/free_shiping.png);
+    top: -3%;
+    left: -6%;
+}
+.return__title::before {
+    position: absolute;
+    content: url(../img/police.png);
+    top: -3%;
+    left: -6%;
+}
+.shiping__info,
+.return__learn {
+    font-family: "Euclid Circular A";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #6b7280;
+    position: relative;
+}
+.return__learn::before {
+    position: absolute;
+    content: '';
+    border: 0.5px solid #6b7280;
+    width: 15%;
+    top: 98%;
+    left: 0%;
+}
+.accordion {
+    margin-top: 54px;
+}
+.accordion-item {
+    margin-top: 40px;
+}
+.accordion-header {
+    position: relative;
+    font-family: "Euclid Circular A";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #1f2937;
+}
+.accordion-button {
+    position: absolute;
+    content: "";
+    top: 3%;
+    right: 0%;
+    background-color: #fff;
+}
+.item__size {
+    display: flex;
+    margin-top: 24px;
+}
+.item__size div:not(:first-child) {
+    margin-left: 16px;
+}
+.size {
+    background: #ffffff;
+    border: 1px solid #9ca3af;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.size span {
+    font-family: "Euclid Circular A";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #1f2937;
+}
+.card__color input {
+    width: 54px;
+    height: 56px;
+    border: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    margin-top: 16px;
+}
+.card__color input:not(:first-child) {
+    margin-left: 5px;
+}
+.card__color input::-webkit-color-swatch {
+    border-radius: 50%;
+    border: 1px solid #f9fafb;
+}
+.card__color input::-webkit-color-swatch:active {
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+/*! BANER */
+.wrapper__img {
+    justify-content: center;
+}
+.wrapper__img img {
+    max-width: 100%;
+}
+.wrapper__img div {
+    margin-top: 20px;
+}
+.wrapper__img div:not(:first-child) {
+    margin-left: 20px;
 }
 .image__title {
     font-family: "Euclid Circular A";
@@ -93,4 +455,9 @@ h6 {
     line-height: 30px;
     letter-spacing: 0.02em;
     color: #1f2937;
+    margin-bottom: 20px;
 }
+.block__baner {
+    margin-top: 80px;
+}
+/*! MEDIA */
