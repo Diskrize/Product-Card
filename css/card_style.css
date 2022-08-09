@@ -80,9 +80,6 @@ h6 {
     display: flex;
 }
 /*! HEADER CARD */
-.header__block {
-    margin-top: 25px;
-}
 .logo {
     font-family: "Euclid Circular A";
     font-style: normal;
@@ -96,7 +93,9 @@ h6 {
     display: flex;
     align-items: center;
     justify-content: start;
+    flex-wrap: wrap;
     margin-bottom: 95px;
+    margin-top: 25px;
 }
 .block__logo {
     display: flex;
@@ -223,6 +222,7 @@ h6 {
     line-height: 25px;
     letter-spacing: 0.02em;
     color: #374151;
+    width: 480px;
 }
 .card__price {
     font-family: "Euclid Circular A";
@@ -262,6 +262,7 @@ h6 {
     justify-content: space-around;
     align-items: center;
     margin-top: 24px;
+    cursor: pointer;
 }
 .calc__minus,
 .calc__plus {
@@ -270,19 +271,19 @@ h6 {
 }
 .calc__minus::before {
     position: absolute;
-    content: '';
+    content: "";
     height: 43px;
     top: -58%;
     left: 512%;
-    border-left: 1px solid #1F2937;
+    border-left: 1px solid #1f2937;
 }
 .calc__plus::before {
     position: absolute;
-    content: '';
+    content: "";
     height: 43px;
     top: -58%;
     left: -204%;
-    border-left: 1px solid #1F2937;
+    border-left: 1px solid #1f2937;
 }
 .btn__card {
     width: 382px;
@@ -310,7 +311,7 @@ h6 {
     background: #f3f4f6;
     border-radius: 7px;
     margin-top: 40px;
-    width: 580px;
+    width: 480px;
     height: 203px;
     display: flex;
     flex-direction: column;
@@ -319,7 +320,7 @@ h6 {
 }
 .shipping,
 .return__product {
-    width: 530px;
+    width: 420px;
     height: 69px;
     margin-top: 25px;
 }
@@ -338,13 +339,13 @@ h6 {
     position: absolute;
     content: url(../img/free_shiping.png);
     top: -3%;
-    left: -6%;
+    left: -8%;
 }
 .return__title::before {
     position: absolute;
     content: url(../img/police.png);
     top: -3%;
-    left: -6%;
+    left: -8%;
 }
 .shiping__info,
 .return__learn {
@@ -359,7 +360,7 @@ h6 {
 }
 .return__learn::before {
     position: absolute;
-    content: '';
+    content: "";
     border: 0.5px solid #6b7280;
     width: 15%;
     top: 98%;
@@ -367,6 +368,7 @@ h6 {
 }
 .accordion {
     margin-top: 54px;
+    width: 480px;
 }
 .accordion-item {
     margin-top: 40px;
@@ -392,8 +394,15 @@ h6 {
     display: flex;
     margin-top: 24px;
 }
-.item__size div:not(:first-child) {
+.item__size div {
+    cursor: pointer;
+}
+.item__size button:not(:first-child) {
     margin-left: 16px;
+}
+.item__size button:hover {
+    border: 1px solid #000;
+    border-radius: 50%;
 }
 .size {
     background: #ffffff;
@@ -420,7 +429,6 @@ h6 {
     border: none;
     appearance: none;
     background: transparent;
-    cursor: pointer;
     margin-top: 16px;
 }
 .card__color input:not(:first-child) {
@@ -461,3 +469,21 @@ h6 {
     margin-top: 80px;
 }
 /*! MEDIA */
+@media ( max-width:1200px ) {
+    .header__block {
+        justify-content: center;
+    }
+    .block__card {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card__menu {
+        margin-left: 75px;
+    }
+    .card__info {
+        margin-top: 20px;
+    }
+}
+@media (max-width: 992px) {
+
+}

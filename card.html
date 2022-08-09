@@ -45,7 +45,7 @@
     <section class="product__card">
         <div class="container">
             <div class="row block__card">
-                <div class="col-xxl-7 wrapper__slider">
+                <div class="col-6 wrapper__slider">
                     <div class="image">
                         <button class="button__up"></button>
                         <div class="active"><img src="img/slider_image.png" alt=""></div>
@@ -58,15 +58,15 @@
                         <img src="img/product__card__image.png" alt="Платье">
                     </div>
                 </div>
-                <div class="col-xxl-5 card__info">
+                <div class="col-6 card__info">
                     <div class="card__name">Floral Print Notched Neckline Dress Without Belt Notched Neckline</div>
                     <div class="card__price">17,00€</div>
                     <div class="card__size">Size</div>
                     <div class="item__size">
-                        <div class="size"><span>s</span></div>
-                        <div class="size"><span>m</span></div>
-                        <div class="size"><span>x</span></div>
-                        <div class="size"><span>xl</span></div>
+                        <button class="size"><span>s</span></button>
+                        <button class="size"><span>m</span></button>
+                        <button class="size"><span>x</span></button>
+                        <button class="size"><span>xl</span></button>
                     </div>
                     <div class="color__name">color</div>
                     <div class="card__color ">
@@ -82,57 +82,59 @@
                         <button class="calc__plus">+</button>
                     </div>
                     <button class="btn__card">Add to Basket</button>
-                    <div class="block__shiping">
-                        <div class="shipping">
-                            <div class="shiping__title">Free Shipping</div>
-                            <div class="shiping__info">Free standard shipping on orders over 9,00€ Estimated to be
-                                delivered on 28/02/2022 - 03/03/2022.</div>
-                        </div>
-                        <div class="return__product">
-                            <div class="return__title">Return Policy</div>
-                            <div class="return__learn">Learn More</div>
-                        </div>
-                    </div>
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                                Desctiption
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    +
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <strong>Это тело аккордеона первого элемента.</strong> Оно отображается по
-                                    умолчанию, пока плагин свертывания не добавит соответствующие классы, которые мы
-                                    используем для стилизации каждого элемента. Эти классы управляют общим внешним
-                                    видом, а также отображением и скрытием с помощью переходов CSS. Вы можете изменить
-                                    все это с помощью собственного CSS или переопределить наши переменные по умолчанию.
-                                    Также стоит отметить, что практически любой HTML может быть помещен в
-                                    <code>.accordion-body</code>, хотя переход ограничивает переполнение.
-                                </div>
+                    <div class="col-12 block__accordion">
+                        <div class="block__shiping">
+                            <div class="shipping">
+                                <div class="shiping__title">Free Shipping</div>
+                                <div class="shiping__info">Free standard shipping on orders over 9,00€ Estimated to be
+                                    delivered on 28/02/2022 - 03/03/2022.</div>
+                            </div>
+                            <div class="return__product">
+                                <div class="return__title">Return Policy</div>
+                                <div class="return__learn">Learn More</div>
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTwo">
-                                Size & Fit
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    +
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <strong>Это тело аккордеона второго элемента.</strong> По умолчанию он скрыт, пока
-                                    плагин свертывания не добавит соответствующие классы, которые мы используем для
-                                    стилизации каждого элемента. Эти классы управляют общим внешним видом, а также
-                                    отображением и скрытием с помощью переходов CSS. Вы можете изменить все это с
-                                    помощью собственного CSS или переопределить наши переменные по умолчанию. Также
-                                    стоит отметить, что практически любой HTML может быть помещен в
-                                    <code>.accordion-body</code>, хотя переход ограничивает переполнение.
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    Desctiption
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        +
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>Это тело аккордеона первого элемента.</strong> Оно отображается по
+                                        умолчанию, пока плагин свертывания не добавит соответствующие классы, которые мы
+                                        используем для стилизации каждого элемента. Эти классы управляют общим внешним
+                                        видом, а также отображением и скрытием с помощью переходов CSS. Вы можете изменить
+                                        все это с помощью собственного CSS или переопределить наши переменные по умолчанию.
+                                        Также стоит отметить, что практически любой HTML может быть помещен в
+                                        <code>.accordion-body</code>, хотя переход ограничивает переполнение.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    Size & Fit
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        +
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>Это тело аккордеона второго элемента.</strong> По умолчанию он скрыт, пока
+                                        плагин свертывания не добавит соответствующие классы, которые мы используем для
+                                        стилизации каждого элемента. Эти классы управляют общим внешним видом, а также
+                                        отображением и скрытием с помощью переходов CSS. Вы можете изменить все это с
+                                        помощью собственного CSS или переопределить наши переменные по умолчанию. Также
+                                        стоит отметить, что практически любой HTML может быть помещен в
+                                        <code>.accordion-body</code>, хотя переход ограничивает переполнение.
+                                    </div>
                                 </div>
                             </div>
                         </div>

@@ -536,18 +536,26 @@ footer {
         bottom: 39%;
         width: 88%;
     }
+    .wrap__footer {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .footer__cards {
+        margin-left: 0;
+    }
+    .cards__title {
+        text-align: center;
+    }
+    .cards__item ul {
+        justify-content: center;
 }
 @media (max-width: 821px) {
-    .cards__item,
-    .cards__title {
-        display: none;
-    }
     .copi__menu {
         display: flex;
         align-items: center;
     }
     .wrap__footer {
-        margin-left: 150px;
+        margin-left: 0px;
         margin-top: 35px;
     }
 }
@@ -630,6 +638,9 @@ footer {
     }
     .wrapper_cart_payment {
         margin-top: 30px;
+    }
+    .wrapper__copi {
+        margin-top: 20px;
     }
 }
 @media (max-width: 536px) {
