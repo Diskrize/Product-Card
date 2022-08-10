@@ -132,6 +132,7 @@ h6 {
 }
 .card__menu ul {
     flex-wrap: wrap;
+    margin-bottom: 0;
 }
 .card__menu {
     margin-left: 286px;
@@ -147,6 +148,10 @@ h6 {
 }
 .menu__basket {
     position: relative;
+}
+.block__menu {
+    display: flex;
+    align-items: center;
 }
 .menu__basket::after {
     position: absolute;
@@ -362,7 +367,7 @@ h6 {
     position: absolute;
     content: "";
     border: 0.5px solid #6b7280;
-    width: 15%;
+    width: 19%;
     top: 98%;
     left: 0%;
 }
@@ -485,4 +490,31 @@ h6 {
     }
 }
 @media (max-width: 992px) {
+    .card__menu {
+        margin-top: 35px;
+    }
+    .block__menu {
+        flex-wrap: wrap;
+        align-items: flex-end;
+    }
+    .card__search {
+        margin-left: 0;
+    }
+    .header__block {
+        margin-bottom: 50px;
+    }
+}
+@media (max-width: 638px) {
+    .block__menu {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .header__block {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .card__menu {
+        margin-left: 0;
+    }
 }
