@@ -80,13 +80,17 @@ h6 {
     display: flex;
 }
 /*! HEADER CARD */
-.logo {
+.logo a{
     font-family: "Euclid Circular A";
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 30px;
     letter-spacing: 0.02em;
+    color: #374151;
+}
+.logo a:hover {
+    text-decoration: none;
     color: #374151;
 }
 .header__block {
